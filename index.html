@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+
+    <title>Monstercodes invaders</title>
+</head>
+<body>
+
+    <main>
+    <header>
+        <img src="./Imágenes/imagen_monstruo_header.png" alt="Foto de simpático mostruito" id="imgHeader">
+        <div id="headerText">            
+            MonsterCode Invaders
+        </div>
+    </header>
+
+    
+    <section class="container" id="screen">
+        <div class="side">
+            <img src="./Imágenes/monstruo1.png">
+            <img src = "./Imágenes/monstruo2.png">
+            <img src="./Imágenes/monstruo3.png">
+            <img src="./Imágenes/monstruo4.png">
+            <img src="./Imágenes/monstruo5.png">
+        </div>
+        <div id="screen-game"></div>
+        <div class="side">
+            <img src="./Imágenes/monstruo6.png">
+            <img src="./Imágenes/monstruo7.png">
+            <img src="./Imágenes/monstruo8.png">
+            <img src="./Imágenes/monstruo9.png">
+            <img src="./Imágenes/imagen_monstruo_header.png">
+        </div>
+    </section>
+    
+    <section class="container" id="controls">
+        <div id="control">
+            <img src="./Imágenes/palancaTaouffik.png" alt="">
+            <img src="./Imágenes/botonTaoufik.png" alt="">
+            <img src="./Imágenes/botonTaouffik.png" alt="">
+            <img src="./Imágenes/botonTaoufik.png" alt="">
+            <img src="./Imágenes/palancaTaouffik.png" alt="">
+        </div>
+        <div class="cashregister">
+            <div class="cash"></div>
+        </div>               
+    </section>
+
+
+    <section class="container" id="panel">
+        <div class="panel" id="players"></div>
+        <div class="panel" id="options">
+            <section class="input">
+                <input type="text" name="write" id="write" style="width: 150px; height: 20px">
+            </section>
+            <section class="options" id="insert">
+                <input type="image" src="./Imágenes/insert-coin.png" name="write" id="write" style="width: 20px; height:20px">
+                <label>Insertar nombre</label>
+            </section>
+            <section class="options" id="change">
+                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="write" style="width: 20px; height:20px">
+                <label>Cambiar nombre</label>
+            </section>
+            <section class="options" id="delete">
+                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="write" style="width: 20px; height:20px">
+                <label>Eliminar nombre</label>
+            </section>
+        </div>
+    </section>
+</main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
