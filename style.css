@@ -122,6 +122,23 @@ img {
 }
 
 
+#participants {
+    width: 40vw;
+    height: 66vw;
+    border: 6px solid lightgray;
+    background-color: #403D36;
+    margin-top: 2vw;
+    float: right;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: whitesmoke;
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
 
 #players{
     width: 45vw;
