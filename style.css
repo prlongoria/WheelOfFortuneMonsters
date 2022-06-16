@@ -86,7 +86,7 @@ h1 {
 #controls{
     width: 94vw;
     height: 8vh;
-    margin-top: 1vw;
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -109,21 +109,17 @@ img {
 }
 
 .cashregister {
-    width: 90% ;
-    height: 10px;
-    border: 1px solid;
-    background: #000;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    display: flex;
-    align-items: center;
-    bottom: 25vw;
+    width: 92vw;
+    height: 1vh;
+    background-color: black;
+    margin-top: 0.5vh;
 }
 
 .cash {
-    width: 96% ;
+    width: 92vw;
     height: 1px;
     background: rgb(32, 9, 162);
+    margin-top: 0.5vh;
 }
 
 
@@ -133,10 +129,10 @@ img {
     justify-content: center;
     row-gap: 1vw;
     width: 92vw;
-    height: 70vw;
+    height: 70vh;
     border: 1px solid black;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 2vh;
+    bottom: 2vh;
     font-family: monospace;
 }
 
@@ -157,8 +153,8 @@ output {
     flex-direction: column;
     justify-content: flex-start;
     line-height: 0px;
-    text-transform: uppercase;
-    font-size: medium;
+    
+    font-size: 3vw;
     color: whitesmoke;
     font-family: "lekton";
 }
@@ -166,9 +162,9 @@ output {
 
 #options{
     width: 45%;
-    height: 68vw;
+    height: 68vh;
     border: 1px solid black;
-    margin-top: 2vw;
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
 }
