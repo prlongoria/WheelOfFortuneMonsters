@@ -1,6 +1,8 @@
 const players=["Aide", "Dani", "Deimos"];
 const buttonStart= document.getElementById("controls");
 buttonStart.onclick= startGame;
+let buttonDelete= document.getElementById("delete");
+buttonDelete.onclick = deleteName;
 const screen= document.getElementById("screen-game");
 document.getElementById("reboot").onclick=toReset;
 const buttonModify= document.getElementById("changeName");
@@ -67,6 +69,28 @@ function checkNewName(){
     } else{
         deleteNameOfArray(newName);
         }
+}
+
+
+function printArrayInPanel () {
+    const participants = document.getElementById("participants");
+    participants.innerHTML="";
+    players.forEach (element => {    
+        participants.innerHTML+= `<p>${element}</p>`; 
+    })
+}
+
+
+function deleteName (){ 
+    let writeName = document.getElementById("writeName").value;    
+    let checkedName = checkName(writeName);
+    //writeName = writeName.toLowerCase();
+    if (checkedName){
+        deleteNameOfArray(writeName);
+        printArrayInPanel();
+    } else {
+        printMessage ("El nombre no está en la lista");
+    }
 }
 
 //Kitty,MOTICA,misi,Chandler, Joey, Goofy y Kira,guti,vilma, dorito,Deimos
