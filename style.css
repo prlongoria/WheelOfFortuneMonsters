@@ -1,29 +1,42 @@
+*{
+    font-family: 'Lekton', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+@font-face {
+    font-family: 'game_over';
+    src: url("/fonts/game_over.ttf") format(“truetype”);
+    }
+
+
 body{
     background-color: white;
     width: 97vw;
     height: 200vw;
 }
 main{
-    background-color: #f3f802;
+    background-color: #F8C40D;
     margin-top: 1vw;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 header{
-    width: 94vw;
-    height: 24vw;
+    width: 92vw;
+    height: 15vw;
     margin-top: 2vw;
-    margin-left: 1vw;
     background-color: white;
     display: flex;
     justify-content: center;    
 }
 #headerText{
     font-size: 7vw;
-    font-family:'Roboto Flex', sans-serif;      
+    font-family:'game_over';    
     align-self: center ;
     color: red;  
     float: right; 
-   
 }
 
 #imgHeader{
@@ -34,13 +47,13 @@ header{
 }
 
 #screen{
-    width: 94vw;
+    width: 92vw;
     height: 68vw;
     border: 1px solid black;
     margin-top: 2vw;
-    margin-left: 1vw;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background: black;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -51,54 +64,65 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 14px;
-    padding-bottom: 14px;
+
 }
 
 #screen #screen-game {
     background: #5C5042;
     height: 100%;
-    width: 80%;
+    width: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+h1 {
+    font-family: "game_over";
+    color: red;
+    text-align: center;
+}
 
 #controls{
     width: 94vw;
-    height: 24vw;
-    border: 1px solid black;
-    margin-top: 2vw;
-    margin-left: 1vw;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-#control{
-    width: 92vw;
-    height: 15vw;
+    height: 8vh;
+    margin-top: 1vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+#control{
+    margin-top: 2vw;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width:15vw;
+    height:15vw;
+}
+
 img {
-    width:10vw;
-    
+    width:9vw;
+    height:9vw;
 }
 
 .cashregister {
-    width:207px ;
+    width: 90% ;
     height: 10px;
     border: 1px solid;
     background: #000;
-    margin-left: 209px;
-    margin-top:20px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    align-items: center;
 }
 
 .cash {
-    width:200px ;
+    width: 96% ;
     height: 1px;
     background: rgb(32, 9, 162);
-    margin-left: 4px;
-    margin-top: 4px;
- 
 }
 
 
@@ -106,25 +130,23 @@ img {
     background-color: black;
     display: flex;
     justify-content: center;
-    width: 94vw;
-    height: 72vw;
+    row-gap: 1vw;
+    width: 92vw;
+    height: 70vw;
     border: 1px solid black;
     margin-top: 2vw;
-    margin-left: 1vw;
+    margin-bottom: 2vw;
     font-family: monospace;
 }
-.panel{
-    width: 45vw;
-    height: 68vw; 
-    border: 1px solid black;
-    margin: auto;
-    margin-top: 2vw;
+
+
+output {
+    height: 90%;
+    width: 42%;
 }
 
 
 #participants {
-    width: 40vw;
-    height: 66vw;
     border: 6px solid lightgray;
     background-color: #403D36;
     margin-top: 2vw;
@@ -133,47 +155,40 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: whitesmoke;
     line-height: 0px;
     text-transform: uppercase;
     font-size: medium;
+    color: whitesmoke;
+    font-family: "lekton";
 }
 
 
-#players{
-    width: 45vw;
-    height: 68vw;
-    border: 1px solid black;
-    display: inline-block;
-    margin-top: 2vw;
-    margin-left: 1vw;
-}
 #options{
-    width: 45vw;
+    width: 45%;
     height: 68vw;
     border: 1px solid black;
     margin-top: 2vw;
-    float: right;
-    margin-right: 1vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 
 .options{
     display: flex;
     align-items: center;
-    font-size: 2vw;
+    font-size: 10px;
     color:  yellow;
     margin-top: 2vw;
-    margin-right: 1vw;
+    border: 1px solid black;
 }
-.input{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    margin-left: 2vw;
+
+#writeName{
+    width: 45%;
+    height: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 label{
-   margin-left: 2vw;
+    margin-left: 10px;
 }
