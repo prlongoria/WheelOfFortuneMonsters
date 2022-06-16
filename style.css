@@ -1,18 +1,17 @@
 *{
     font-family: 'Lekton', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
-
 @font-face {
     font-family: 'game_over';
-    src: url("/fonts/game_over.ttf") format(“truetype”);
-    }
-
+    src: url("./PressStart2P-Regular.ttf") format("truetype");
+    font-style: italic;
+  
+}
 
 body{
     background-color: white;
     width: 97vw;
-    height: 200vw;
+    height: 100vh;
 }
 main{
     background-color: #F8C40D;
@@ -21,6 +20,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+
 }
 
 header{
@@ -30,21 +31,28 @@ header{
     background-color: white;
     display: flex;
     justify-content: center;    
+    border: 2vw solid black;
 }
 #headerText{
-    font-size: 7vw;
-    font-family:'game_over';    
-    align-self: center ;
+    font-size: 4vw;
+    font-weight: 300;
+    font-family:"game_over"; 
+    padding: 1vw;   
     color: red;  
-    float: right; 
+    text-align: center;
+    margin-top: 2vw;
+    width: 60vw;
 }
 
-#imgHeader{
-    position: relative;
-    left: 1vw;
-    width: 25vw;
+#logo{
+    position: absolute;
+    left: 5vw;
+    width: 18vw;
+    height: auto;
+    margin-top: 1vw;
         
 }
+
 
 #screen{
     width: 92vw;
@@ -98,10 +106,7 @@ h1 {
     justify-content: space-between;
 }
 
-#logo {
-    width:15vw;
-    height:15vw;
-}
+
 
 img {
     width:9vw;
@@ -129,7 +134,7 @@ img {
     justify-content: center;
     row-gap: 1vw;
     width: 92vw;
-    height: 70vh;
+    height: 38vh;
     border: 1px solid black;
     margin-top: 2vh;
     bottom: 2vh;
@@ -162,7 +167,7 @@ output {
 
 #options{
     width: 45%;
-    height: 68vh;
+    height: 35vh;
     border: 1px solid black;
     margin-top: 2vh;
     display: flex;
@@ -189,3 +194,5 @@ output {
 label{
     margin-left: 10px;
 }
+
+
