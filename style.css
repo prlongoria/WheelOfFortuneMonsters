@@ -83,12 +83,21 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
+    background-image: url(/Imágenes/calavera2.gif);
+    background-size: 80vw;
+    opacity: 0.5;
 }
 
 h1 {
     font-family: "game_over";
-    color: red;
+    color: rgb(255, 0, 0);
     text-align: center;
+    font-size: 5vw;
+    background-color: aquamarine;
+    opacity: 1;
+}
+#start{
+    width: 25vw;
 }
 
 #controls{
@@ -158,8 +167,8 @@ output {
     flex-direction: column;
     justify-content: flex-start;
     line-height: 0px;
-    
-    font-size: 3vw;
+    overflow-y: auto;
+    font-size: 5vw;
     color: whitesmoke;
     font-family: "lekton";
 }
@@ -194,5 +203,3 @@ output {
 label{
     margin-left: 10px;
 }
-
-
