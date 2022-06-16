@@ -1,8 +1,10 @@
 const players=["Aide", "Dani", "Deimos"];
-const buttonStart= document.getElementById("#controls");
+const buttonStart= document.getElementById("controls");
 buttonStart.onclick= startGame;
-document.getElementById("#controls").onclick= startGame;
-const screen= document.getElementById("screengame");
+const screen= document.getElementById("screen-game");
+document.getElementById("reboot").onclick=toReset;
+const buttonModify= document.getElementById("changeName");
+buttonModify.onclick=changeName;
 // console.log(players);
 // const test = checkName("Dani"):
 // console.log(test);
@@ -19,18 +21,59 @@ function printMessage(text){
 function deleteNameOfArray(name){
     let  deletedPlayer= players.indexOf(name);
     players.splice( deletedPlayer, 1 );
-}
-//const test4=printNameInScreen("Dani")
-function printNameInScreen(randonName){
-    document.getElementById("screengame").innerHTML=`<h1 style="color: white">${randonName}</h1>`
+    printPlayersInScreen(players);
 }
 function startGame(){
     const ramdomName = players[Math.floor(Math.random() * players.length)];
-    printNameInScreen(ramdomName);
+    showSacrificedPlayer(ramdomName);
     deleteNameOfArray(ramdomName);
+    console.log(players)
+    if (players.length===1){
+        winGame(players);
+    }
 }
-const test4=showSacrificedPlayer("Dani")
+//const test4=showSacrificedPlayer("Dani")
 function showSacrificedPlayer(player_name) {
-    let screen_game = document.getElementById('screen-game')
-    screen_game.innerHTML = `<div class="SacrificedPlayer"><p>El jugador ${player_name} ha sido eliminado</p></div>`;
+    screen.innerHTML = `<div class="SacrificedPlayer"><h1>El jugador ${player_name} ha sido eliminado</h1></div>`;
 }
+
+function winGame(winName){
+    screen.innerHTML = `<div class="winner"><p>El jugador ${winName} ha sobrevivido</p><button id="reboot" onclick="toReset()">reiniciar</button></div>`;     
+}
+function toReset(){
+    console.log("bieeeen")
+   return location.reload();
+}
+function changeName(){
+    const name=document.getElementById("writeName").value;
+     const checkedName=checkName(name);
+    if (checkedName){
+        checkNewName();
+    }else{
+        const text="El nombre no existe en la lista"
+        printMessage(text);
+    }
+}
+function checkNewName(){
+    const newName=window.prompt("Introduce el nuevo nombre");
+    const checkedNewName=checkName(newName);
+    if(checkedNewName===null){
+        const text="Tienes que introducir un nombre";
+        printMessage(text);
+    }
+    if(checkedNewName){
+        const text="este nombre ya existe";
+        printMessage(text);
+    } else{
+        deleteNameOfArray(newName);
+        }
+}
+
+//Kitty,MOTICA,misi,Chandler, Joey, Goofy y Kira,guti,vilma, dorito,Deimos
+
+
+
+
+
+
+
