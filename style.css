@@ -117,6 +117,7 @@ img {
     margin-bottom: 2vw;
     display: flex;
     align-items: center;
+    bottom: 25vw;
 }
 
 .cash {
@@ -176,15 +177,15 @@ output {
 .options{
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 4vw;
     color:  yellow;
     margin-top: 2vw;
     border: 1px solid black;
 }
 
 #writeName{
-    width: 45%;
-    height: 45%;
+    width: 99%;
+    height: 8%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
