@@ -6,26 +6,23 @@ buttonStart.onclick= startGame;
 let buttonDelete= document.getElementById("delete");
 buttonDelete.onclick = deleteName;
 const screen= document.getElementById("screen-game");
-document.getElementById("reboot").onclick=toReset;
 const buttonModify= document.getElementById("changeName");
 buttonModify.onclick=changeName;
-// console.log(players);
-// const test = checkName("Dani"):
-// console.log(test);
+const playersStart = printArrayInPanel(players);
+
 function checkName(name){
     let nameInArray= players.includes(name);
     return nameInArray;
 }
-//const test2=printMessage("bieeeeeen");
+
 function printMessage(text){
     window.alert(text);
 }
-//const test3= deleteNameOfArray("Dani");
-//console.log(players)
+
 function deleteNameOfArray(name){
     let  deletedPlayer= players.indexOf(name);
     players.splice( deletedPlayer, 1 );
-    printPlayersInScreen(players);
+    printArrayInPanel(players);
 }
 function startGame(){
     const ramdomName = players[Math.floor(Math.random() * players.length)];
@@ -98,36 +95,20 @@ function deleteName (){
 //Kitty,MOTICA,misi,Chandler, Joey, Goofy y Kira,guti,vilma, dorito,Deimos
 //modifique const por let para que se modifique y actualize al array
 function insertName(){
-    console.log("paso 1 listo")
-    let insertedName=document.getElementById("write").value;
-    //insertedName = insertedName.toLowerCase();
-    let nameVerified= checkName()
-    function checkName(name){
-        let nameInArray= players.includes(insertedName);
-        return nameInArray;
-    }
-    while (nameVerified){
-        alert("Error, ya existe este jugador")
-        break
-    }
-    while (!nameVerified){
-        alert("Bienvenido")
-            let doc = document.createElement('p');
-            doc.innerHTML = insertedName;
-            const container = document.querySelector('#participants');
-            container.appendChild(doc);
-       /*  
-        let OutputMod=insert()
-            function insert(){
-                players.push(insertedName)
-                return (players)
-            }
-        document.getElementById("participants").innerHTML=OutputMod;
-        */
-        nameVerified++
+     let insertedName = document.getElementById("writeName").value;
+     let nameVerified = checkName(insertedName);
+    
+    
+    if (nameVerified){
+       printMessage("El jugador ya está en la lista");
+    } else{
+        alert("Bienvenido");
+        players.push(insertedName);
+        printArrayInPanel();
+
+            
     }
 }
-
 
 
 
