@@ -5,20 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
-
-    <title>Monstercodes invaders</title>
+  
+    <title>Monstercode invaders</title>
 </head>
 <body>
 
     <main>
     <header>
-        <img src="./Imágenes/imagen_monstruo_header.png" alt="Foto de simpático mostruito" id="imgHeader">
+        <img id="logo" src="./Imágenes/imagen_monstruo_header.png" alt="Foto de simpático mostruito" id="imgHeader">
         <div id="headerText">            
             MonsterCode Invaders
         </div>
@@ -47,7 +41,7 @@
         <div id="control">
             <img src="./Imágenes/palancaTaouffik.png" alt="">
             <img src="./Imágenes/botonTaoufik.png" alt="">
-            <img src="./Imágenes/botonTaouffik.png" alt="">
+            <img src="./Imágenes/botonTaoufik.png" alt="">
             <img src="./Imágenes/botonTaoufik.png" alt="">
             <img src="./Imágenes/palancaTaouffik.png" alt="">
         </div>
@@ -58,27 +52,25 @@
 
 
     <section class="container" id="panel">
-           <output id="participants">
+        <output class="panel" id="participants">
                 <p>NOMBRE</p> 
                 <p>DE</p>
                 <p>PRUEBA</p>
                 <p>taoufik</p>
                 <p>TAOUFIK</p>
-            </output>        
+        </output>
         <div class="panel" id="options">
-            <section class="input">
-                <input type="text" name="write" id="write" style="width: 35vw; height: 3vh">
-            </section>
+                <input type="text" name="write" id="writeName">
             <section class="options" id="insert">
-                <input type="image" src="./Imágenes/insert-coin.png" name="insert"  alt="insertar"style="width: 2vw; height:3vh">
+                <input type="image" src="./Imágenes/insert-coin.png" name="write" id="insertName" style="width: 20px; height:20px">
                 <label>Insertar nombre</label>
             </section>
             <section class="options" id="change">
-                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="change" alt="cambiar" style="width: 2vw; height:3vh">
+                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="changeName" style="width: 20px; height:20px">
                 <label>Cambiar nombre</label>
             </section>
             <section class="options" id="delete">
-                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="delete" alt="eliminar" style="width: 2vw; height: 3vh">
+                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="delete" style="width: 20px; height:20px">
                 <label>Eliminar nombre</label>
             </section>
         </div>
@@ -88,3 +80,5 @@
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
+
+
