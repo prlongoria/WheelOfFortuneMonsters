@@ -39,7 +39,7 @@ function showSacrificedPlayer(player_name) {
 }
 
 function winGame(winName){
-    screen.innerHTML = `<div class="winner"><p>El jugador ${winName} ha sobrevivido</p><button id="reboot" onclick="toReset()">reiniciar</button></div>`;     
+    screen.innerHTML = `<div class="winner"><h1>El jugador ${winName} ha sobrevivido</h1><button id="reboot" onclick="toReset()" style = "margin-left: 28vw;">reiniciar</button></div>`;     
 }
 function toReset(){
     console.log("bieeeen")
@@ -48,25 +48,27 @@ function toReset(){
 function changeName(){
     const name=document.getElementById("writeName").value;
      const checkedName=checkName(name);
-    if (checkedName){
-        checkNewName();
+    console.log(checkName);
+     if (checkedName){
+        checkNewName(name);
     }else{
         const text="El nombre no existe en la lista"
         printMessage(text);
     }
 }
-function checkNewName(){
+function checkNewName(name){    
     const newName=window.prompt("Introduce el nuevo nombre");
-    const checkedNewName=checkName(newName);
-    if(checkedNewName===null){
-        const text="Tienes que introducir un nombre";
-        printMessage(text);
-    }
+    console.log (newName);
+    const checkedNewName=checkName(newName);    
+    
     if(checkedNewName){
         const text="este nombre ya existe";
         printMessage(text);
     } else{
-        deleteNameOfArray(newName);
+        let indexOfNameToChange = players.indexOf(name);
+        players[indexOfNameToChange] = newName;
+        printArrayInPanel(players);
+       return players
         }
 }
 
@@ -96,21 +98,17 @@ function deleteName (){
 //modifique const por let para que se modifique y actualize al array
 function insertName(){
      let insertedName = document.getElementById("writeName").value;
-     let nameVerified = checkName(insertedName);
-    
-    
-    if (nameVerified){
-       printMessage("El jugador ya está en la lista");
-    } else{
-        alert("Bienvenido");
-        players.push(insertedName);
-        printArrayInPanel();
-
-            
+     let nameVerified = checkName(insertedName);    
+    if(insertedName !==""){     
+        if (nameVerified){
+        printMessage("El jugador ya está en la lista");
+        } else{
+            alert("Bienvenido");
+            players.push(insertedName);
+            printArrayInPanel();            
+        }
     }
 }
-
-
 
 
 
