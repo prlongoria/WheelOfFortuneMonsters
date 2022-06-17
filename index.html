@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  
-    <title>Monstercode invaders</title>
-</head>
-<body>
-
-    <main>
-    <header>
-        <img id="logo" src="./Imágenes/imagen_monstruo_header.png" alt="Foto de simpático mostruito" id="imgHeader">
-        <div id="headerText">            
-            MonsterCode Invaders
-        </div>
-    </header>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     
-    <section class="container" id="screen">
-        <div class="side">
-            <img src="./Imágenes/monstruo1.png" alt="">
-            <img src = "./Imágenes/monstruo2.png" alt="">
-            <img src="./Imágenes/monstruo3.png" alt="">
-            <img src="./Imágenes/monstruo4.png" alt="">
-            <img src="./Imágenes/monstruo5.png" alt="">
-        </div>
-        <div id="screen-game"></div>
-        <div class="side">
-            <img src="./Imágenes/monstruo6.png" alt="">
-            <img src="./Imágenes/monstruo7.png" alt="">
-            <img src="./Imágenes/monstruo8.png" alt="">
-            <img src="./Imágenes/monstruo9.png" alt="">
-            <img src="./Imágenes/imagen_monstruo_header.png" alt="">
-        </div>
-    </section>
-    
-    <section class="container" id="controls">
-        <div id="control">
-            <img src="./Imágenes/palancaTaouffik.png" alt="">
-            <img src="./Imágenes/botonTaoufik.png" alt="">
-            <img src="./Imágenes/start.jfif" alt="" id="start">
-            <img src="./Imágenes/botonTaoufik.png" alt="">
-            <img src="./Imágenes/palancaTaouffik.png" alt="">
-        </div>
-        <div class="cashregister">
-            <div class="cash"></div>
-        </div>               
-    </section>
+        <title>Monstercode invaders</title>
+    </head>
+    <body>
+        <audio src="InterstellarOdyssey.ogg" autoplay loop></audio>
+        <main>
+            <header>
+                <img id="logo" src="./Imágenes/imagen_monstruo_header.png" alt="Foto de simpático mostruito" id="imgHeader">
+                <div id="headerText">            
+                    MonsterCode Invaders
+                </div>
+            </header>
+        
+            <section class="container" id="screen">
+                <div class="side">
+                    <img src="./Imágenes/monstruo1.png" alt="">
+                    <img src = "./Imágenes/monstruo2.png" alt="">
+                    <img src="./Imágenes/monstruo3.png" alt="">
+                    <img src="./Imágenes/monstruo4.png" alt="">
+                    <img src="./Imágenes/monstruo5.png" alt="">
+                </div>
+                <div id="screen-game"></div>
+                <div class="side">
+                    <img src="./Imágenes/monstruo6.png" alt="">
+                    <img src="./Imágenes/monstruo7.png" alt="">
+                    <img src="./Imágenes/monstruo8.png" alt="">
+                    <img src="./Imágenes/monstruo9.png" alt="">
+                    <img src="./Imágenes/imagen_monstruo_header.png" alt="">
+                </div>
+            </section>
+        
+            <section class="container" id="controls">
+                <div id="control">
+                    <img src="./Imágenes/palancaTaouffik.png" alt="">
+                    <img src="./Imágenes/botonTaoufik.png" alt="">
+                    <img src="./Imágenes/start.jfif" alt="" id="start">
+                    <img src="./Imágenes/botonTaoufik.png" alt="">
+                    <img src="./Imágenes/palancaTaouffik.png" alt="">
+                </div>
+                <div class="cashregister">
+                    <div class="cash"></div>
+                </div>               
+            </section>
 
-
-    <section class="container" id="panel">
-        <output class="panel" id="participants">
-        </output>
-        <div class="panel" id="options">
-                <input type="text" name="write" id="writeName">
-            <section class="options" id="insert">
-                <input type="image" src="./Imágenes/insert-coin.png" name="write" id="insertName" style="width: 8.5vw;">
-                <label>Insertar nombre</label>
+            <section class="container" id="panel">
+                <output class="panel" id="participants"></output>
+                <div class="panel" id="options">
+                    <input type="text" name="write" id="writeName">
+                    <section class="options" id="insert">
+                        <input type="image" src="./Imágenes/insert-coin.png" name="write" id="insertName" style="width: 8.5vw;">
+                        <label>Insertar nombre</label>
+                    </section>
+                    <section class="options" id="change">
+                        <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="changeName" style="width: 8vw;">
+                        <label>Cambiar nombre</label>
+                    </section>
+                    <section class="options" id="delete">
+                        <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="delete" style="width: 8vw;">
+                        <label>Eliminar nombre</label>
+                    </section>
+                </div>
             </section>
-            <section class="options" id="change">
-                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="changeName" style="width: 8vw;">
-                <label>Cambiar nombre</label>
-            </section>
-            <section class="options" id="delete">
-                <input type="image" src="./Imágenes/boton-de-emergencia.png" name="write" id="delete" style="width: 8vw;">
-                <label>Eliminar nombre</label>
-            </section>
-        </div>
-    </section>
-</main>
-<audio src="InterstellarOdyssey.ogg" autoplay loop></audio>
+        </main>    
 
     <script type="text/javascript" src="script.js"></script>
-</body>
+    </body>
 </html>
