@@ -1,0 +1,27 @@
+
+LINK A LA PRESENTACIÓN QUE HICIMOS:
+https://docs.google.com/presentation/d/1P8JnD4J2zI_sVZ8C4uLZQRNiLuwasGd4oy--1lpoP9E/edit#slide=id.gcb9a0b074_1_0
+
+
+DIA 1:
+Hice el header y lo puse con flex. Me falta la imagen correcta y la fuente de texto correcta. No sé si está bien la foto así colocada
+
+DIA 2:
+Crear repo nuevo y cree ramas  
+Corregí index y styles
+js de eliminar nombre
+Puse orden en el equipo, jajaja
+
+DIA 3:
+Js función imprimir nombre en panel junto a Dani
+
+DIA 4:
+En equipo poner todo en común, y rematar el js
+
+Los días de la semana pasada no me acuerdo, pero fue todo en equipo en clase que recuerde, historias de usuario y demás del Figma.
+La idea de que fuera una maquinita como la de mi hijo también lo aporté yo, pero tampoco creo que se deba decir, porque esa idea fue 
+a partir del sketch que había hecho Dani que me recordaba a una maquinita, y a 
+partir de ahí la imaginación desbordante de todos consiguió que desembocara en esta maravilla 
+Lo de investigar y probar cómo funciona el github, que ayer nos tiramos media tarde Dani y yo, 
+no lo pongo porque no creo que quede bien
+
