@@ -19,7 +19,12 @@ main{
     flex-direction: column;
     align-items: center;
     height: 100vh;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 }
+
 header{
     width: 92vw;
     height: 15vw;
@@ -39,13 +44,25 @@ header{
     margin-top: 2vw;
     width: 60vw;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #logo{
     position: absolute;
     left: 5vw;
     width: 18vw;
     height: auto;
+<<<<<<< HEAD
     margin-top: 1vw;        
 }
+=======
+    margin-top: 1vw;
+        
+}
+
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #screen{
     width: 92vw;
     height: 68vw;
@@ -63,6 +80,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 }
 #screen #screen-game {
     background: #5C5042;
@@ -72,6 +93,7 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
+<<<<<<< HEAD
     background-image: url(/Imágenes/abduccion.webp);
     background-size: 80vw;
     opacity: 0.5;
@@ -86,6 +108,16 @@ h1 {
 #start{
     width: 25vw;
 }
+=======
+}
+
+h1 {
+    font-family: "game_over";
+    color: red;
+    text-align: center;
+}
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #controls{
     width: 94vw;
     height: 8vh;
@@ -93,6 +125,15 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+<<<<<<< HEAD
+}
+#control{
+    margin-top: 2vw;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+=======
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 }
 #control{
     margin-top: 2vw;
@@ -100,6 +141,9 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+
+
 img {
     width:9vw;
     height:9vw;
@@ -128,10 +172,20 @@ img {
     bottom: 2vh;
     font-family: monospace;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 output {
     height: 90%;
     width: 42%;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #participants {
     border: 6px solid lightgray;
     background-color: #403D36;
@@ -142,11 +196,21 @@ output {
     flex-direction: column;
     justify-content: flex-start;
     line-height: 0px;
+<<<<<<< HEAD
     overflow-y: auto;
     font-size: 5vw;
     color: whitesmoke;
     font-family: "lekton";
 }
+=======
+    
+    font-size: 3vw;
+    color: whitesmoke;
+    font-family: "lekton";
+}
+
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #options{
     width: 45%;
     height: 35vh;
@@ -163,12 +227,22 @@ output {
     margin-top: 2vw;
     border: 1px solid black;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
 #writeName{
     width: 99%;
     height: 8%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 label{
     margin-left: 10px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 0636bb27693f75ffeeb59dafd0a158e5d90b083f
